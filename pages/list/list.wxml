@@ -1,0 +1,19 @@
+<view> 
+  <navigator class="list-item" 
+    wx:for="{{list}}" 
+    url="{{'/pages/player/player?id=' + item.lesson}}">
+    <view class="pic">
+      <image src="{{'/assets/image/nce' + id + '.jpg'}}" mode="aspectFill"></image>
+      <text class="lesson-title">{{item.lesson}}</text>
+    </view>
+    <view class="title-wrap">
+      <view class="title-no">{{item.lesson < 10 ? '0' + item.lesson : item.lesson}}</view>
+      <view>
+        <view class="title-en">{{item.en_title}}</view>
+        <view class="title-zh">{{item.zh_title}}</view>
+      </view>
+    </view>
+    <view class="arrow"></view>
+  </navigator>
+</view>
+

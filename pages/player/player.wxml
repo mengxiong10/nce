@@ -1,0 +1,21 @@
+<view class="audio-container">
+  <view class="audio-bg">
+  </view>
+  <view class="play-time">
+    <text>{{currentTime}}</text>
+    <progress
+      percent="{{progress}}"
+      activeColor="red"
+      stroke-width = "4"
+      bindtouchstart="selectProgress">
+    </progress>
+    <view class="icon-drag" style="{{'left:' + (15 + 0.7 * progress) + '%' }}"></view>
+    <text>{{totalTime}}</text>
+  </view>
+  <view class="play-control">
+    <image class="icon-prev" src="/assets/image/icon-prev.png" bindtap="clickPrev" />
+    <image class="icon-play" src="/assets/image/icon-{{ status === 'pause' ? 'play' : 'pause' }}.png" bindtap="clickPlay"  />
+    <image class="icon-next" src="/assets/image/icon-next.png" bindtap="clickNext" />
+    <image class="icon-circle" src="/assets/image/icon-circle-{{ mode === 0 ? 'list' : 'single'}}.png" bindtap="clickMode"></image>
+  </view>
+</view>

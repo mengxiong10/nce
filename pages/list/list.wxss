@@ -1,0 +1,52 @@
+/* pages/book-1/index.wxss */
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 6rpx 10rpx;
+  border-bottom: 1px solid #efefef;
+}
+.pic {
+  position: relative;
+  width: 115rpx;
+  height: 115rpx;
+  background: #09bb07;
+  color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pic > image {
+  position: absolute;
+  opacity: 0.8;
+}
+.pic > text {
+  line-height: 115rpx;
+  font-size: 40rpx;
+  color: #000;
+
+}
+
+.title-wrap {
+  line-height: 55rpx;
+  font-size: 14px;
+  /*margin-left: 16rpx;*/
+  flex: 1;
+  display: flex;
+}
+.title-no {
+  margin: 0 16rpx;
+}
+.title-en {
+  color: #3f3f3f;
+}
+.title-zh {
+  color: #969696;
+}
+.arrow::before {
+  content: "\276F";
+  color: #b6afa1;
+  margin-right: 16rpx;
+}
+
+
+

@@ -1,0 +1,27 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.title {
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 50rpx 0;
+  font-style: italic;
+}
+.nce {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+.nce navigator {
+  width: 40%;
+}
+
+image {
+  width: 100%;
+}

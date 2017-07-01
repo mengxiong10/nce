@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">新概念英语</view>
+  <audio src="http://online1.tingclass.net/lesson/shi0529/0000/44/2.mp3"
+    controls = "{{false}}"
+    id="audio"
+    bindtimeupdate="cbTimeupdate"
+    bindplay="cbPlay"
+    bindpause="cbPause"
+    bindended="cbEnded"></audio>
+  <view class="nce">
+    <navigator wx:for="{{[1,2,3,4]}}" 
+      url="{{'/pages/list/list?id=' + item}}">
+      <image src="{{'/assets/image/nce' + item + '.jpg'}}" mode="widthFix"></image>
+    </navigator>
+  </view>
+</view>
